@@ -1,0 +1,8 @@
+<h3>Comments (<%= @article.comments.size %>)</h3>
+<% @article.comments.each do |comment| %>
+  <p>Posted <%= distance_of_time_in_words(comment.article.created_at, comment.created_at) %> later</p>
+  <p><b>Commenter:</b>
+    <%= comment.author_name %></p>
+  <p><b>Comment:</b>
+    <%= comment.body %></p>
+<% end %>
