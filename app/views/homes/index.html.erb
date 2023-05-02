@@ -1,0 +1,4 @@
+<h1 data-turbo-frame>The current time is: <%= @time %></h1>
+<%= turbo_frame_tag do %>
+  <%= button_to "Refresh Time", root_path, method: :get, data: { turbo: "replace" } %>
+<% end %>

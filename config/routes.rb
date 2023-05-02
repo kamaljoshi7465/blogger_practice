@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :homes
   resources :posts
   # get 'articles/index'
   resources :tags
