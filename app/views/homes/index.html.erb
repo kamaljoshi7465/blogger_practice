@@ -2,3 +2,20 @@
 <%= turbo_frame_tag do %>
   <%= button_to "Refresh Time", root_path, method: :get, data: { turbo: "replace" } %>
 <% end %>
+<style>
+  h1 {
+  text-align: center;
+  font-size: 2em;
+  margin: 20px 0;
+  }
+  button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  border: none;
+  background-color: #00bcd4;
+  color: white;
+  }
+</style>
